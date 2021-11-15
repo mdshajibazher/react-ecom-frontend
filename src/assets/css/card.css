@@ -1,0 +1,28 @@
+.card{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    border: none !important;
+    border-radius: 0% !important;
+    box-shadow: 0 0 4px 0 rgba(57,78,234,0.1);
+}
+.image-box{
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+}
+.image-box img{
+    max-width: 100%;
+    -webkit-transition: .3s ease 0s;
+    -moz-transition: .3s ease 0s;
+    -ms-transition: .3s ease 0s;
+    -o-transition: .3s ease 0s;
+    transition: .3s ease 0s;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.image-box:hover img{
+    transform: scale(1.1);
+}
