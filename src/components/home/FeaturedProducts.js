@@ -8,7 +8,7 @@ class FeaturedProducts extends Component {
                     <h5 className="section-title">Featured Products</h5>
                     <p className="section-subtitle">Some subtitle about this section</p>
                     <Row>
-                        <Col className="p-1" key={1} lg={2} md={2} sm={4} xs={4}>
+                        <Col className="p-1"  lg={2} md={2} sm={4} xs={4}>
                             <Card className="image-box card text-center">
                                 <img className="w-100" src="https://static-01.daraz.com.bd/p/mdc/7cc21f23c27a28db31601d064b98c51b.jpg_340x340q80.jpg_.webp" alt=""/>
                                 <Card.Body>
@@ -17,7 +17,7 @@ class FeaturedProducts extends Component {
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col className="p-1" key={1} lg={2} md={2} sm={4} xs={4}>
+                        <Col className="p-1"  lg={2} md={2} sm={4} xs={4}>
                             <Card className="image-box card text-center">
                                 <img className="w-100" src="https://static-01.daraz.com.bd/p/mdc/7cc21f23c27a28db31601d064b98c51b.jpg_340x340q80.jpg_.webp" alt=""/>
                                 <Card.Body>
@@ -26,7 +26,7 @@ class FeaturedProducts extends Component {
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col className="p-1" key={1} lg={2} md={2} sm={4} xs={4}>
+                        <Col className="p-1"  lg={2} md={2} sm={4} xs={4}>
                             <Card className="image-box card text-center">
                                 <img className="w-100" src="https://static-01.daraz.com.bd/p/mdc/7cc21f23c27a28db31601d064b98c51b.jpg_340x340q80.jpg_.webp" alt=""/>
                                 <Card.Body>
@@ -35,7 +35,7 @@ class FeaturedProducts extends Component {
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col className="p-1" key={1} lg={2} md={2} sm={4} xs={4}>
+                        <Col className="p-1" lg={2} md={2} sm={4} xs={4}>
                             <Card className="image-box card text-center">
                                 <img className="w-100" src="https://static-01.daraz.com.bd/p/mdc/7cc21f23c27a28db31601d064b98c51b.jpg_340x340q80.jpg_.webp" alt=""/>
                                 <Card.Body>
@@ -44,7 +44,7 @@ class FeaturedProducts extends Component {
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col className="p-1" key={1} lg={2} md={2} sm={4} xs={4}>
+                        <Col className="p-1" lg={2} md={2} sm={4} xs={4}>
                             <Card className="image-box card text-center">
                                 <img className="w-100" src="https://static-01.daraz.com.bd/p/mdc/7cc21f23c27a28db31601d064b98c51b.jpg_340x340q80.jpg_.webp" alt=""/>
                                 <Card.Body>

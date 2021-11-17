@@ -9,7 +9,7 @@ class Collection extends Component {
                     <h5 className="section-title">Special Collection</h5>
                     <p className="section-subtitle">Some subtitle about this section</p>
                     <Row>
-                        <Col className="p-1" key={1} xl={3} lg={3} md={3} sm={6} xs={6}>
+                        <Col className="p-1"  xl={3} lg={3} md={3} sm={6} xs={6}>
                             <Card className="image-box card text-center">
                                 <img className="w-100" src="https://static-01.daraz.com.bd/p/mdc/7cc21f23c27a28db31601d064b98c51b.jpg_340x340q80.jpg_.webp" alt=""/>
                                 <Card.Body>
@@ -19,7 +19,7 @@ class Collection extends Component {
                             </Card>
                         </Col>
 
-                        <Col className="p-1" key={1} xl={3} lg={3} md={3} sm={6} xs={6}>
+                        <Col className="p-1" xl={3} lg={3} md={3} sm={6} xs={6}>
                             <Card className="image-box card text-center">
                                 <img className="w-100" src="https://static-01.daraz.com.bd/p/mdc/7cc21f23c27a28db31601d064b98c51b.jpg_340x340q80.jpg_.webp" alt=""/>
                                 <Card.Body>
@@ -29,7 +29,7 @@ class Collection extends Component {
                             </Card>
                         </Col>
 
-                        <Col className="p-1" key={1} xl={3} lg={3} md={3} sm={6} xs={6}>
+                        <Col className="p-1"  xl={3} lg={3} md={3} sm={6} xs={6}>
                             <Card className="image-box card text-center">
                                 <img className="w-100" src="https://static-01.daraz.com.bd/p/mdc/7cc21f23c27a28db31601d064b98c51b.jpg_340x340q80.jpg_.webp" alt=""/>
                                 <Card.Body>
@@ -39,7 +39,7 @@ class Collection extends Component {
                             </Card>
                         </Col>
 
-                        <Col className="p-1" key={1} xl={3} lg={3} md={3} sm={6} xs={6}>
+                        <Col className="p-1"  xl={3} lg={3} md={3} sm={6} xs={6}>
                             <Card className="image-box card text-center">
                                 <img className="w-100" src="https://static-01.daraz.com.bd/p/mdc/7cc21f23c27a28db31601d064b98c51b.jpg_340x340q80.jpg_.webp" alt=""/>
                                 <Card.Body>

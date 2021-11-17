@@ -5,9 +5,26 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 class NewArrival extends Component {
+
+    constructor(props) {
+        super(props);
+        this.prev =  this.prev.bind(this);
+        this.next =  this.next.bind(this);
+    }
+
+    prev(e){
+        e.preventDefault();
+        this.slider.slickPrev();
+    }
+
+    next(e){
+        e.preventDefault();
+        this.slider.slickNext()
+    }
+
     render() {
         const settings = {
-            dots: true,
+            dots: false,
             infinite: false,
             speed: 500,
             slidesToShow: 4,
@@ -42,22 +59,15 @@ class NewArrival extends Component {
         };
         return (
             <Fragment>
-                <Container fluid={true} className="spad">
-                    <h5 className="section-title">NEW ARRIVAL</h5>
+                <Container fluid={true}  className="spad overflow-hidden">
+                    <h5 className="section-title">NEW ARRIVAL
+                        <a onClick={this.prev} className="btn btn-sm  site-btn btn-danger" href=""><i className="fa fa-angle-left"></i></a>
+                        <a onClick={this.next} className="btn btn-sm site-btn btn-danger" href=""><i className="fa fa-angle-right"></i></a>
+                    </h5>
                     <p className="section-subtitle">Some subtitle about this section</p>
 
-                        <Slider {...settings}>
-                            <div>
-                                <Card className="image-box card text-center">
-                                    <img className="w-100" src="https://static-01.daraz.com.bd/p/mdc/7cc21f23c27a28db31601d064b98c51b.jpg_340x340q80.jpg_.webp" alt=""/>
-                                    <Card.Body>
-                                        <p className="product-card-title">ASUS Gamibook PRO Intell </p>
-                                        <p className="product-card-price">Price: 3000</p>
-                                    </Card.Body>
-                                </Card>
-                            </div>
+                        <Slider ref={c => this.slider = c} {...settings}>
 
-                            <div>
                                 <Card className="image-box card text-center">
                                     <img className="w-100" src="https://static-01.daraz.com.bd/p/mdc/7cc21f23c27a28db31601d064b98c51b.jpg_340x340q80.jpg_.webp" alt=""/>
                                     <Card.Body>
@@ -65,9 +75,7 @@ class NewArrival extends Component {
                                         <p className="product-card-price">Price: 3000</p>
                                     </Card.Body>
                                 </Card>
-                            </div>
 
-                            <div>
                                 <Card className="image-box card text-center">
                                     <img className="w-100" src="https://static-01.daraz.com.bd/p/mdc/7cc21f23c27a28db31601d064b98c51b.jpg_340x340q80.jpg_.webp" alt=""/>
                                     <Card.Body>
@@ -75,47 +83,47 @@ class NewArrival extends Component {
                                         <p className="product-card-price">Price: 3000</p>
                                     </Card.Body>
                                 </Card>
-                            </div>
 
-                            <div>
-                                <Card className="image-box card text-center">
-                                    <img className="w-100" src="https://static-01.daraz.com.bd/p/mdc/7cc21f23c27a28db31601d064b98c51b.jpg_340x340q80.jpg_.webp" alt=""/>
-                                    <Card.Body>
-                                        <p className="product-card-title">ASUS Gamibook PRO Intell </p>
-                                        <p className="product-card-price">Price: 3000</p>
-                                    </Card.Body>
-                                </Card>
-                            </div>
+                            <Card className="image-box card text-center">
+                                <img className="w-100" src="https://static-01.daraz.com.bd/p/mdc/7cc21f23c27a28db31601d064b98c51b.jpg_340x340q80.jpg_.webp" alt=""/>
+                                <Card.Body>
+                                    <p className="product-card-title">ASUS Gamibook PRO Intell </p>
+                                    <p className="product-card-price">Price: 3000</p>
+                                </Card.Body>
+                            </Card>
 
-                            <div>
-                                <Card className="image-box card text-center">
-                                    <img className="w-100" src="https://static-01.daraz.com.bd/p/mdc/7cc21f23c27a28db31601d064b98c51b.jpg_340x340q80.jpg_.webp" alt=""/>
-                                    <Card.Body>
-                                        <p className="product-card-title">ASUS Gamibook PRO Intell </p>
-                                        <p className="product-card-price">Price: 3000</p>
-                                    </Card.Body>
-                                </Card>
-                            </div>
+                            <Card className="image-box card text-center">
+                                <img className="w-100" src="https://static-01.daraz.com.bd/p/mdc/7cc21f23c27a28db31601d064b98c51b.jpg_340x340q80.jpg_.webp" alt=""/>
+                                <Card.Body>
+                                    <p className="product-card-title">ASUS Gamibook PRO Intell </p>
+                                    <p className="product-card-price">Price: 3000</p>
+                                </Card.Body>
+                            </Card>
 
-                            <div>
-                                <Card className="image-box card text-center">
-                                    <img className="w-100" src="https://static-01.daraz.com.bd/p/mdc/7cc21f23c27a28db31601d064b98c51b.jpg_340x340q80.jpg_.webp" alt=""/>
-                                    <Card.Body>
-                                        <p className="product-card-title">ASUS Gamibook PRO Intell </p>
-                                        <p className="product-card-price">Price: 3000</p>
-                                    </Card.Body>
-                                </Card>
-                            </div>
+                            <Card className="image-box card text-center">
+                                <img className="w-100" src="https://static-01.daraz.com.bd/p/mdc/7cc21f23c27a28db31601d064b98c51b.jpg_340x340q80.jpg_.webp" alt=""/>
+                                <Card.Body>
+                                    <p className="product-card-title">ASUS Gamibook PRO Intell </p>
+                                    <p className="product-card-price">Price: 3000</p>
+                                </Card.Body>
+                            </Card>
 
-                            <div>
-                                <Card className="image-box card text-center">
-                                    <img className="w-100" src="https://static-01.daraz.com.bd/p/mdc/7cc21f23c27a28db31601d064b98c51b.jpg_340x340q80.jpg_.webp" alt=""/>
-                                    <Card.Body>
-                                        <p className="product-card-title">ASUS Gamibook PRO Intell </p>
-                                        <p className="product-card-price">Price: 3000</p>
-                                    </Card.Body>
-                                </Card>
-                            </div>
+                            <Card className="image-box card text-center">
+                                <img className="w-100" src="https://static-01.daraz.com.bd/p/mdc/7cc21f23c27a28db31601d064b98c51b.jpg_340x340q80.jpg_.webp" alt=""/>
+                                <Card.Body>
+                                    <p className="product-card-title">ASUS Gamibook PRO Intell </p>
+                                    <p className="product-card-price">Price: 3000</p>
+                                </Card.Body>
+                            </Card>
+
+                            <Card className="image-box card text-center">
+                                <img className="w-100" src="https://static-01.daraz.com.bd/p/mdc/7cc21f23c27a28db31601d064b98c51b.jpg_340x340q80.jpg_.webp" alt=""/>
+                                <Card.Body>
+                                    <p className="product-card-title">ASUS Gamibook PRO Intell </p>
+                                    <p className="product-card-price">Price: 3000</p>
+                                </Card.Body>
+                            </Card>
+
                         </Slider>
 
                 </Container>
