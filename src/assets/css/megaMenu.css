@@ -14,7 +14,7 @@
     overflow: paged-y;
     box-shadow: 0 0 2px 0 rgba(57,78,234,0.1);
 }
-.active, .accordion:hover{
+.accordion.active, .accordion:hover{
     color: #ffffff;
     font-weight: 400;
     background: #f59315;
@@ -25,7 +25,7 @@
     float: right;
     margin-left: 5px;
 }
-.accordion:after, hover{
+.accordion.active:after, .accordion.active:hover{
     color: #ffffff;
     content:"\276E";
 }
@@ -41,7 +41,7 @@
     direction: rtl;
     font-family: 'Roboto Condensed',sans-serif;
     font-weight: 300;
-    height: 300px;
+    height: 350px;
     overflow-y: auto;
     overflow-x: hidden;
     scrollbar-width: thin;

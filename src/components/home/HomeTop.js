@@ -7,7 +7,7 @@ class HomeTop extends Component {
     render() {
         return (
             <Fragment>
-                <Container fluid={true}>
+                <Container className="p-0 m-0 overrflow-hidden" fluid={true}>
                     <Row>
                         <Col lg={3} md={3} sm={12}>
                            <MegaMenu/>
